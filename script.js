@@ -29,6 +29,9 @@ var countdownfunction = setInterval(function() {
         seconds = "0" + seconds.toString();
     }
 
+    if (minutes < 10) {
+        minutes = "0" + minutes.toString();
+    }
     // Display the result
     document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s " + milliseconds + "ms ";
 
