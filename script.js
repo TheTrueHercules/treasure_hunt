@@ -16,7 +16,7 @@ var countdownfunction = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     var milliseconds = Math.floor((distance % 1000) / 1);
-    var nanoseconds = Math.floor((distance % 1) * 1000000);
+    
 
     // Add leading zeros
     if(milliseconds < 10) {
@@ -26,7 +26,7 @@ var countdownfunction = setInterval(function() {
     }
 
     // Display the result
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s " + milliseconds + "ms " + nanoseconds + "ns ";
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s " + milliseconds + "ms ";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
