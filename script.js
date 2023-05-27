@@ -29,7 +29,7 @@ var countdownfunction = setInterval(function() {
     }
 
     if (seconds < 10) {
-        seconds = "0" + seconds;
+        seconds = "0" + seconds.toString();
     }
 
     // Display the result
