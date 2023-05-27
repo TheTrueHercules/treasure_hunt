@@ -18,6 +18,7 @@ var countdownfunction = setInterval(function() {
     var milliseconds = Math.floor((distance % 1000) / 1);
 
     // hey i added this comment
+    //fuck you
     
 
     // Display the result
