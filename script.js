@@ -25,6 +25,10 @@ var countdownfunction = setInterval(function() {
         milliseconds = "0" + milliseconds;
     }
 
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
     // Display the result
     document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s " + milliseconds + "ms ";
 
