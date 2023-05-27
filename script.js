@@ -20,8 +20,11 @@ var countdownfunction = setInterval(function() {
 
     // Add leading zeros
     if(milliseconds < 10) {
-        milliseconds = "00" + milliseconds;
+        milliseconds = "000" + milliseconds;
     } else if(milliseconds < 100) {
+        milliseconds = "00" + milliseconds;
+    }
+    else{
         milliseconds = "0" + milliseconds;
     }
 
